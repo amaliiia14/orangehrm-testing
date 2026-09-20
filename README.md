@@ -2,7 +2,7 @@
 
 ## Deskripsi
 
-Project ini merupakan **automation testing** pada fitur Login website OrangeHRM menggunakan Cypress.
+Project ini merupakan automation testing pada fitur Login website OrangeHRM menggunakan Cypress.
 
 ## Tools
 
