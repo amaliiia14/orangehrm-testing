@@ -21,21 +21,4 @@ Pengujian mencakup:
 * Pengujian huruf besar dan kecil
 * Username dan password dengan spasi di awal/akhir
 
-## Cara Menjalankan
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Jalankan Cypress:
-
-```bash
-npx cypress open
-```
-
-## Author
-
-**Amalia Ramadhani Putri**
 
