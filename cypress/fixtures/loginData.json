@@ -1,0 +1,16 @@
+{
+  "validUsername":"Admin",
+  "validPassword":"admin123",
+  "invalidUsername":"Admin123",
+  "invalidPassword":"Admin123",
+  "usernameNotRegistered":"Admin2",
+  "passwordNotRegistered":"admin222",
+  "lowercaseUsername":"admin",
+  "uppercasePassword":"ADMIN123",
+  "whiteSpaceUsername":"     ",
+  "whiteSpacePassword":"        ",
+  "leadingTrailingUsernamme":" Admin ",
+  "leadingTrailingPassword":" admin123 "
+}
+
+
