@@ -40,13 +40,13 @@ describe('API testing', () => {
       method: 'POST',
       url: 'https://api.escuelajs.co/api/v1/categories', 
       body: {
-        "name": "Parfum Dior",
+        "name": "Semangat 45",
         "image": "https://placeimg.com/2345/"
       }
     }).then((response) => {
       expect(response.status).to.eq(201)
       expect(response.body).to.have.property('id')
-      expect(response.body.name).to.eq('Parfum Dior')
+      expect(response.body.name).to.eq('Semangat 45')
     })
   })
   
@@ -68,7 +68,7 @@ describe('API testing', () => {
   it('Update a category', () => {
     cy.request({
       method: 'PUT',
-      url: 'https://api.escuelajs.co/api/v1/categories/40',
+      url: 'https://api.escuelajs.co/api/v1/categories/39',
       body: {
         "name":"yuk ayo semangat",
         "image":"https://placeimg.com/640/480/any"
@@ -122,7 +122,7 @@ describe('API testing', () => {
   it('Delete a category', () => {
     cy.request({
       method: 'DELETE',
-      url: 'https://api.escuelajs.co/api/v1/categories/34'
+      url: 'https://api.escuelajs.co/api/v1/categories/56'
     }).then((response) => {
       expect(response.status).to.eq(200)
       expect(response.body).to.exist
@@ -132,7 +132,7 @@ describe('API testing', () => {
   it('Get request using the deleted category ID', () => {
     cy.request({
       method: 'GET',
-      url: 'https://api.escuelajs.co/api/v1/categories/34',
+      url: 'https://api.escuelajs.co/api/v1/categories/56',
       failOnStatusCode: false
     }).then((response) => {
       expect(response.status).to.eq(400)
